@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css"/>
+    <script>
+        // function showHint(str) {
+        //     if (str.length == 0) {
+        //         document.getElementById("txtHint").innerHTML = "";
+        //         return;
+        //     } else {
+        //
+        //         var xmlhttp = new XMLHttpRequest();
+        //         xmlhttp.open("GET", "index.php?q=" + str, true);
+        //
+        //         xmlhttp.onreadystatechange = function() {
+        //             if (this.readyState == 4 && this.status == 200) {
+        //                 document.getElementById("txtHint").innerHTML = this.responseText;
+        //             }
+        //         };
+        //         xmlhttp.send();
+        //     }
+        // }
+    </script>
+</head>
+<body>
+
+<p><b>Start typing a name in the input field below:</b></p>
+<form id="formData">
+    First name: <input name="name" type="text">
+    Last name: <input  name="lastName" type="text" >
+    Password: <input name="password" type="password" >
+</form>
+<button onclick="showHint()" class="btn"></button>
+<p>Suggestions: <span id="txtHint"></span></p>
+<script src="js.js"></script>
+</body>
+
+</html>
